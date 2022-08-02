@@ -6,7 +6,7 @@
 /*   By: tohebeka <tohebeka@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/04/06 18:33:13 by tohebeka      #+#    #+#                 */
-/*   Updated: 2022/07/11 02:29:25 by tohebeka      ########   odam.nl         */
+/*   Updated: 2022/07/17 20:45:39 by tohebeka      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,10 @@ typedef struct s_stack
 	struct s_stack	*next;
 	struct s_stack	*previous;
 }	t_stack;
+
+void	push_a(t_stack **stack_a, t_stack **stack_b);
+void	push_b(t_stack **stack_a, t_stack **stack_b);
+void	swap(t_stack *stack);
+void	rot(t_stack **stack);
+void	r_rot(t_stack **stack_a, t_stack **stack_b);
 #endif

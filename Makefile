@@ -1,13 +1,14 @@
 CFLAGS := 
 NAME = push_swap
 C_SOURCES := 	main.c\
+				operations.c
 				
 
 all:$(NAME) 
 
 
 $(NAME): $(OBJ)
-	$(CC) $(C_SOURCES)  -Ofast -o $(NAME)
+	$(CC) $(C_SOURCES)   -o $(NAME)
 
 %.o: %.c
 	$(CC)   -c $< -o $@
