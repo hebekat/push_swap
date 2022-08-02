@@ -6,7 +6,7 @@
 /*   By: tohebeka <tohebeka@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/07/17 19:32:27 by tohebeka      #+#    #+#                 */
-/*   Updated: 2022/08/02 16:36:17 by tohebeka      ########   odam.nl         */
+/*   Updated: 2022/08/02 19:04:48 by tohebeka      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,14 +42,13 @@ void	push_b(t_stack **stack_a, t_stack **stack_b)
 		if ((*stack_b)->next)
 			(*stack_b)->next->previous = (*stack_b);
 	}
-	//printf("pb\n");
+	printf("pb\n");
 }
 
 void	push_a(t_stack **stack_a, t_stack **stack_b)
 {
 	if ((*stack_b))
 	{
-		//write(3, "txt", 1);
 		if ((*stack_b)->next)
 		{
 			(*stack_b) = (*stack_b)->next;
@@ -67,7 +66,7 @@ void	push_a(t_stack **stack_a, t_stack **stack_b)
 		if ((*stack_a)->next)
 			(*stack_a)->next->previous = (*stack_a);
 	}
-	//printf("pa\n");
+	printf("pa\n");
 }
 
 void	rot(t_stack **stack)
@@ -86,7 +85,7 @@ void	rot(t_stack **stack)
 		while ((*stack)->previous)
 			(*stack) = (*stack)->previous;
 	}
-	//printf("ra\n");
+	printf("ra\n");
 }
 
 void	rev_rot(t_stack **stack)
